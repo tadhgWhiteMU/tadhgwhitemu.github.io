@@ -1,0 +1,64 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    main {
+        @apply text-purple-600 dark_text-purple-400;
+    }
+
+    h1 {
+        @apply text-2xl font-semibold font-sans pb-2;
+    }
+
+    h2,
+    caption {
+        @apply text-xl font-semibold pb-2 text-left;
+    }
+
+    h3 {
+        @apply text-lg font-bold pb-1;
+    }
+
+    a {
+        @apply hover_underline font-bold text-purple-500;
+    }
+
+    p,
+    main li {
+        @apply text-lg font-normal font-sans max-w-prose pb-3;
+    }
+
+    li > p {
+        @apply pb-0;
+    }
+
+    th[scope="row"] {
+        @apply text-right align-top text-lg min-w-min;
+    }
+
+    td {
+        @apply px-1 text-lg align-top;
+    }
+
+    tr {
+        @apply border-2 border-purple-600 dark_border-purple-400;
+    }
+
+    table {
+        @apply max-w-prose;
+    }
+
+    ul {
+        @apply text-lg;
+    }
+
+    div.body li {
+        @apply list-disc list-inside;
+    }
+
+    div.body ul {
+        @apply pb-3;
+    }
+}
