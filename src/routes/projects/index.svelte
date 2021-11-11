@@ -16,7 +16,8 @@
     export let projects;
 
     function fixSlug(slug) {
-        return `${base}/${slug}`;
+        // return `${base}/${slug}`;
+        return slug;
     }
 </script>
 
