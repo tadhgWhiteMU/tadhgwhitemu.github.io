@@ -17,7 +17,7 @@
 
     function fixSlug(slug) {
         // return `${base}/${slug}`;
-        return slug.slice("projects/".length + 1);
+        return slug.slice("projects/".length);
     }
 </script>
 
