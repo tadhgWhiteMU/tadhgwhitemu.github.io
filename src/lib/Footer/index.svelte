@@ -7,13 +7,13 @@
 >
     {#each links as link}
         {#if link.url}
-            <p>
+            <p class="text-center">
                 <a rel="external" href={link.url}>
                     {link.label}
                 </a>
             </p>
         {:else}
-            <p>{link.label}</p>
+            <p class="text-center">{link.label}</p>
         {/if}
     {/each}
 </footer>
