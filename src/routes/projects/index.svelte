@@ -17,7 +17,12 @@
 
     function fixSlug(slug) {
         // return `${base}/${slug}`;
-        return slug.slice("projects/".length);
+        // console.log(`Base path at this moment: ${base}`);
+        // console.log(`Slug at this moment: ${slug}`);
+        // console.log(`Theoretical full path at this moment: ${base}/${slug}`);
+        // console.log(`Possible fix: ${base}/${slug.slice("projects".length)}`);
+
+        return slug
     }
 </script>
 
