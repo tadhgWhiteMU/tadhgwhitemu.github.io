@@ -1,4 +1,8 @@
 <script>
+    import { page } from "$app/stores";
+
+    const { host, path } = page;
+
     export let title = "";
     export let platforms = [];
     export let languages = [];
@@ -8,10 +12,16 @@
     export let image = {};
     export let skills = [];
     export let links = [];
+    export let summary = "";
 </script>
 
 <svelte:head>
     <title>Tadhg White | {title}</title>
+    <meta property="og:title" content="{title}" />
+    <meta property="og:url" content="{'https://' + host + path}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="{summary}"/>
+    <meta name="twitter:card" content="summary" />
 </svelte:head>
 
 <h1>{title}</h1>
