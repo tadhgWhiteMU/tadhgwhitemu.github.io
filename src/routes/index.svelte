@@ -14,6 +14,7 @@
 </script>
 
 <script>
+    import Link from "$lib/Link/index.svelte";
     export let projects;
 </script>
 
@@ -33,14 +34,14 @@
     {#each projects as { title, summary, slug }}
         <li class="border-2 border-purple-600 dark_border-purple-400 p-2 max-w-prose">
             <h3>
-                <a sveltekit:prefetch href={slug}>{title}</a>
+                <Link url={slug} {title}>{title}</Link>
             </h3>
             <p>{summary}</p>
-            <a sveltekit:prefetch href={slug}>Read More &gt;&gt;</a>
+            <Link url={slug} {title}>Read More &gt;&gt;</Link>
         </li>
     {/each}
 </ul>
 
 <p>
-    The full list can be found <a sveltekit:prefetch href="/projects">here</a>.
+    The full list can be found <Link url="/projects" title="Projects">here</Link>.
 </p>

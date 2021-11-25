@@ -32,6 +32,7 @@
             <a
                 sveltekit:prefetch
                 href={link.url}
+                title={link.title}
                 class="inline-block align-middle p-3 mx-auto w-11/12 sm_w-32 sm_mx-0 h-16 font-bold text-purple-600 dark_text-purple-400 hover_text-purple-400 dark_hover_text-purple-600 hover_bg-purple-600 dark_hover_bg-purple-400 active_bg-purple-400 dark_active_bg-purple-600 {curr ==
                 link.url
                     ? `border-purple-600 dark_border-purple-400`

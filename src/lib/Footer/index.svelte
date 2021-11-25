@@ -1,4 +1,5 @@
 <script>
+    import Link from "$lib/Link/index.svelte";
     export let links = [];
 </script>
 
@@ -8,9 +9,9 @@
     {#each links as link}
         {#if link.url}
             <p class="text-center">
-                <a rel="external" href={link.url}>
+                <Link url={link.url} title={link.label} isExternal={true}>
                     {link.label}
-                </a>
+                </Link>
             </p>
         {:else}
             <p class="text-center">{link.label}</p>

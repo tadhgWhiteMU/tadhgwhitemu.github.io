@@ -1,13 +1,16 @@
 [
     {
+        "title": "Home",
         "label": "Home",
         "url": "/"
     },
     {
+        "title": "About Me",
         "label": "About&nbsp;Me",
         "url": "/about"
     },
     {
+        "title": "Projects",
         "label": "Projects",
         "url": "/projects"
     }
