@@ -17,10 +17,10 @@
 
 <svelte:head>
     <title>Tadhg White | {title}</title>
-    <meta property="og:title" content="{title}" />
-    <meta property="og:url" content="{'https://' + host + path}" />
+    <meta property="og:title" content={title} />
+    <meta property="og:url" content={"https://" + host + path} />
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="{summary}"/>
+    <meta property="og:description" content={summary} />
     <meta name="twitter:card" content="summary" />
 </svelte:head>
 
