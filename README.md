@@ -4,14 +4,16 @@
 
 Make new (blank!!!) repo on GitHub:
 
-```
-tadhgwhitemu.github.io
+```bash
+ # In my case: tadhgwhitemu.github.io
+<lowercased_username>.github.io
 ```
 
-Make a directory (under school gitconfig!) and:
+Make a directory and:
 
 ```bash
-git clone git@github.com-school:tadhgWhiteMU/tadhgwhitemu.github.io.git
+# For me: git clone git@github.com:tadhgWhiteMU/tadhgwhitemu.github.io.git
+git clone git@github.com:<username>/<lowercased_username>.github.io.git
 ```
 
 ## Initialise App
@@ -52,7 +54,7 @@ module.exports = {
     overrides: [{ files: ["*.svelte"], processor: "svelte3/svelte3" }],
     parserOptions: {
         sourceType: "module",
-        ecmaVersion: 2019,
+        ecmaVersion: "latest,
     },
     env: {
         browser: true,
@@ -61,6 +63,8 @@ module.exports = {
     },
 };
 ```
+
+(Setting `ecmaVersion` to too-low a version will cause ESLint to complain about the `import.meta` used elsewhere. I used `latest` to be safe.)
 
 Also, in `.gitignore` remove the line that says `/build`.
 
@@ -132,7 +136,7 @@ const config = {
         // hydrate the <div id="svelte"> element in src/app.html
         target: "#svelte",
         paths: {
-            base: dev ? "" : "/tadhgwhitemu.github.io",
+            base: "",
         },
         //        adapter: adapter()
     },
@@ -148,6 +152,8 @@ const config = {
 export default config;
 ```
 
+Note: the documentation for `adapter-static` seems to suggest setting `base` to the url of the site when deploying to Github Pages. This was a resounding failure when I tried it, but leaving it blank seems to work.
+
 ## Install Packages
 
 Provided there're no errors, run:
@@ -155,19 +161,22 @@ Provided there're no errors, run:
 ```bash
 npm i
 npm i -D @sveltejs/adapter-static@next
+npm i -D gh-pages
 ```
 
 ## Ensure `.nojekyll`
 
-Add the following line under `"scripts"` in `package.json`:
+Add the following under `"scripts"` in `package.json`:
 
 ```json
 "scripts": {
-    "postbuild": "[ -d ./build ] && touch ./build/.nojekyll"
+    "postbuild": "[ -d ./build ] && touch ./build/.nojekyll",
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d build -t true"
 }
 ```
 
-This will run after `npm run build` and create a `.nojekyll` file in the `/build` directory if one doesn't already exist. The conditional ensures that it doesn't do anything if `/build` doesn't exist.
+The first will run after `npm run build` and create a `.nojekyll` file in the `/build` directory if one doesn't already exist. The conditional ensures that it doesn't do anything if `/build` doesn't exist. The second will call `npm run build` before deployment. And the last invoked `gh-pages`, which copies the contents of the `/build` directory to a Git branch called `gh-pages`, which then gets pushed to Github. (`-t true` ensures it includes files beginning with `.`, like `.nojekyll` when doing so.)
 
 Note: this assumes that Bash is being used and that `touch` is available.
 
@@ -180,15 +189,14 @@ This is the hard/fun part. :)
 After everything's ready, ensure everything has been added and committed, then:
 
 ```bash
-git push
+git push # optional, if you want your source-code up alongside the built site
+npm run deploy
 ```
-
-Note: remember to run `npm run build` first! There's no point uploading the latest version of the code without the corresponding generated site.
 
 ## Publish!
 
-On Github: repo `Settings` > `Pages` > `Source` > `Folder` > `/build`.
+On Github: repo `Settings` > `Pages` > `Source` > `Branch` > `gh-pages (root)`.
 
 Presumably there is also an explicit "please publish my site" option that'll be fairly self-evident.
 
-Note: repo needs to be Public, so double-check for private info before `push`ing!
+Note: repo needs to be Public, so double-check for private info before `push`ing or `deploy`ing!
