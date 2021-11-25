@@ -1,8 +1,6 @@
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function get({ query }) {
-    /* eslint-disable */
     const modules = import.meta.glob("./*.{md, svelte.md}");
-    /* eslint-enable */
 
     let projectPromises = [];
     const limit = Number(query.get("limit") ?? Infinity);
