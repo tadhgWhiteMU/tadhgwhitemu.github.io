@@ -8,15 +8,17 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-f90364ef.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-40075b22.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-eaedae38.js">
-		<link rel="modulepreload" href="/_app/pages/about/index.svelte.md-7640e37a.js">
+		<link rel="modulepreload" href="/_app/start-eaec12e0.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-117ff7e7.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-88c3c164.js">
+		<link rel="modulepreload" href="/_app/chunks/stores-49bdebd1.js">
+		<link rel="modulepreload" href="/_app/chunks/index-34f49940.js">
+		<link rel="modulepreload" href="/_app/pages/about/index.svelte.md-e7c9c710.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-b0c26517.css">
 
 		<script type="module">
-			import { start } from "/_app/start-f90364ef.js";
+			import { start } from "/_app/start-eaec12e0.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -29,8 +31,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-eaedae38.js"),
-						import("/_app/pages/about/index.svelte.md-7640e37a.js")
+						import("/_app/pages/__layout.svelte-88c3c164.js"),
+						import("/_app/pages/about/index.svelte.md-e7c9c710.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -45,9 +47,9 @@
     <body>
         <div id="svelte">
 <div class="flex flex-col h-auto min-h-screen bg-purple-600 dark_bg-purple-400"><nav class="flex flex-wrap items-center justify-between p-5 bg-white dark_bg-black border-purple-600 dark_border-purple-400 border-b-4 mx-auto w-full md_w-4/5"><button class="inline-block align-middle border-4 border-purple-600 dark_border-purple-400 p-3 w-11/12 mx-auto h-15 font-bold text-purple-600 dark_text-purple-400 hover_text-purple-400 dark_hover_text-purple-600 hover_bg-purple-600 dark_hover_bg-purple-400 sm_hidden">Show</button>
-    <div class="hidden sm_flex flex-col sm_flex-row sm_items-center sm_justify-between w-full sm_w-auto text-center font-bold mt-5 sm_mt-0 sm_space-x-5 gap-1"><a sveltekit:prefetch href="/" class="inline-block align-middle p-3 mx-auto w-11/12 sm_w-32 sm_mx-0 h-16 font-bold text-purple-600 dark_text-purple-400 hover_text-purple-400 dark_hover_text-purple-600 hover_bg-purple-600 dark_hover_bg-purple-400 active_bg-purple-400 dark_active_bg-purple-600 border-transparent hover_border-purple-600 dark_hover_border-purple-400 border-4"><!-- HTML_TAG_START -->Home<!-- HTML_TAG_END -->
-            </a><a sveltekit:prefetch href="/about" class="inline-block align-middle p-3 mx-auto w-11/12 sm_w-32 sm_mx-0 h-16 font-bold text-purple-600 dark_text-purple-400 hover_text-purple-400 dark_hover_text-purple-600 hover_bg-purple-600 dark_hover_bg-purple-400 active_bg-purple-400 dark_active_bg-purple-600 border-purple-600 dark_border-purple-400 hover_border-purple-600 dark_hover_border-purple-400 border-4"><!-- HTML_TAG_START -->About&nbsp;Me<!-- HTML_TAG_END -->
-            </a><a sveltekit:prefetch href="/projects" class="inline-block align-middle p-3 mx-auto w-11/12 sm_w-32 sm_mx-0 h-16 font-bold text-purple-600 dark_text-purple-400 hover_text-purple-400 dark_hover_text-purple-600 hover_bg-purple-600 dark_hover_bg-purple-400 active_bg-purple-400 dark_active_bg-purple-600 border-transparent hover_border-purple-600 dark_hover_border-purple-400 border-4"><!-- HTML_TAG_START -->Projects<!-- HTML_TAG_END -->
+    <div class="hidden sm_flex flex-col sm_flex-row sm_items-center sm_justify-between w-full sm_w-auto text-center font-bold mt-5 sm_mt-0 sm_space-x-5 gap-1"><a sveltekit:prefetch href="/" title="Home" class="inline-block align-middle p-3 mx-auto w-11/12 sm_w-32 sm_mx-0 h-16 font-bold text-purple-600 dark_text-purple-400 hover_text-purple-400 dark_hover_text-purple-600 hover_bg-purple-600 dark_hover_bg-purple-400 active_bg-purple-400 dark_active_bg-purple-600 border-transparent hover_border-purple-600 dark_hover_border-purple-400 border-4"><!-- HTML_TAG_START -->Home<!-- HTML_TAG_END -->
+            </a><a sveltekit:prefetch href="/about" title="About Me" class="inline-block align-middle p-3 mx-auto w-11/12 sm_w-32 sm_mx-0 h-16 font-bold text-purple-600 dark_text-purple-400 hover_text-purple-400 dark_hover_text-purple-600 hover_bg-purple-600 dark_hover_bg-purple-400 active_bg-purple-400 dark_active_bg-purple-600 border-purple-600 dark_border-purple-400 hover_border-purple-600 dark_hover_border-purple-400 border-4"><!-- HTML_TAG_START -->About&nbsp;Me<!-- HTML_TAG_END -->
+            </a><a sveltekit:prefetch href="/projects" title="Projects" class="inline-block align-middle p-3 mx-auto w-11/12 sm_w-32 sm_mx-0 h-16 font-bold text-purple-600 dark_text-purple-400 hover_text-purple-400 dark_hover_text-purple-600 hover_bg-purple-600 dark_hover_bg-purple-400 active_bg-purple-400 dark_active_bg-purple-600 border-transparent hover_border-purple-600 dark_hover_border-purple-400 border-4"><!-- HTML_TAG_START -->Projects<!-- HTML_TAG_END -->
             </a></div></nav>
     <main class="bg-white dark_bg-black mx-auto w-full md_w-4/5 py-4 flex-grow px-5 sm_px-10 lg_px-20 xl_px-36 2xl_px-48">
 
@@ -57,9 +59,12 @@
 <p>I enjoy seeing how things are put together, and then watching something I’ve made come to life and work as expected. I’d like to work in game design and development someday, as that kind of self-contained project is very satisfying to work on.</p>
 <p>On a more theoretical level, I’m fascinated by the design of many things, especially programming languages. There’s something very intriguing to me about seeing how all the different aspects of a language, from syntax style to machine code generation, come together.</p>
 <p>Outside of programming, I like reading (mostly Mystery and Fantasy — preferably at the same time!), and solving Sudoku puzzles with peculiar rulesets.</p></main>
-    <footer class="flex flex-wrap flex-col md_flex-row md_justify-center content-center gap-4 py-5 px-10 bg-white dark_bg-black border-purple-600 dark_border-purple-400 border-t-4 mx-auto w-full md_w-4/5 font-bold text-purple-600 dark_text-purple-400"><p class="text-center"><a rel="external" href="https://github.com/TadhgWhiteMU">GitHub</a>
-            </p><p class="text-center"><a rel="external" href="https://www.linkedin.com/in/tadhg-white-b0b086224/">LinkedIn</a>
-            </p><p class="text-center"><a rel="external" href="https://github.com/TadhgWhiteMU/tadhgwhitemu.github.io">Source Code</a>
+    <footer class="flex flex-wrap flex-col md_flex-row md_justify-center content-center gap-4 py-5 px-10 bg-white dark_bg-black border-purple-600 dark_border-purple-400 border-t-4 mx-auto w-full md_w-4/5 font-bold text-purple-600 dark_text-purple-400"><p class="text-center"><a href="https://github.com/tadhgWhiteMU" title="GitHub" referrerpolicy="no-referrer" target="_blank" rel="external noopener">GitHub
+                </a>
+            </p><p class="text-center"><a href="https://www.linkedin.com/in/tadhg-white-b0b086224/" title="LinkedIn" referrerpolicy="no-referrer" target="_blank" rel="external noopener">LinkedIn
+                </a>
+            </p><p class="text-center"><a href="https://github.com/tadhgWhiteMU/tadhgwhitemu.github.io" title="Source Code" referrerpolicy="no-referrer" target="_blank" rel="external noopener">Source Code
+                </a>
             </p></footer></div>
 
 
