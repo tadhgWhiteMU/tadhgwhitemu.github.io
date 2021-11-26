@@ -7,11 +7,11 @@
     {
         "title": "About Me",
         "label": "About&nbsp;Me",
-        "url": "/about"
+        "url": "/about/"
     },
     {
         "title": "Projects",
         "label": "Projects",
-        "url": "/projects"
+        "url": "/projects/"
     }
 ]

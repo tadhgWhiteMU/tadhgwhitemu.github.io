@@ -14,6 +14,7 @@ const config = {
             base: "",
         },
         adapter: adapter(),
+        trailingSlash: "always"
     },
 
     preprocess: [

@@ -1,6 +1,7 @@
 <script>
     import { page } from "$app/stores";
 
+    // TODO These are `undefined` at buildtime, apparently
     const { host, path } = page;
 
     export let title = "";

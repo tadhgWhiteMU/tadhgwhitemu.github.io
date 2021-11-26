@@ -43,5 +43,5 @@
 </ul>
 
 <p>
-    The full list can be found <Link url="/projects" title="Projects">here</Link>.
+    The full list can be found <Link url="/projects/" title="Projects">here</Link>.
 </p>

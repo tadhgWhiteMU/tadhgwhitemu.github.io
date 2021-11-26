@@ -12,7 +12,7 @@ export async function get({ query }) {
     }
 
     for (let [path, resolver] of Object.entries(modules)) {
-        const slug = `projects/${path.match(/([\w-]+)\.(svelte\.md|md)/i)?.[1] ?? null}`;
+        const slug = `/projects/${path.match(/([\w-]+)\.(svelte\.md|md)/i)?.[1] ?? null}/`;
         const promise = resolver().then((post) => ({
             slug,
             ...post.metadata,
