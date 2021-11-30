@@ -22,7 +22,7 @@
 
 <h1>Projects</h1>
 
-<ul class="py-2 space-y-2">
+<ul class="py-2 space-y-2 my-box-list">
     {#each projects as { title, summary, languages, tools, slug }}
         <li class="border-2 border-purple-600 dark_border-purple-400 p-2 max-w-prose">
             <h2><Link url={slug} {title}>{title}</Link></h2>

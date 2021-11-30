@@ -61,4 +61,12 @@
     div.body ul {
         @apply pb-3;
     }
+
+    /* main ul.my-box-list li {
+        @apply list-none;
+    } */
+
+    /* main ul li {
+        @apply list-disc list-inside;
+    } */
 }

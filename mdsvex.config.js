@@ -7,9 +7,9 @@ const config = {
         dashes: "oldschool",
     },
 
-    // This won't work until some other stuff is set up
     layout: {
         project: "./src/lib/Layouts/project.svelte",
+        about: "./src/lib/Layouts/about.svelte",
     },
 
     remarkPlugins: [],
