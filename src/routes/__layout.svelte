@@ -25,10 +25,12 @@
 
 <div class="flex flex-col h-auto min-h-screen bg-purple-600 dark_bg-purple-400">
     <NavBar links={navbarLinks} />
-    <main
-        class="bg-white dark_bg-black mx-auto w-full md_w-4/5 py-4 flex-grow px-5 sm_px-10 lg_px-20 xl_px-36 2xl_px-48"
+    <div
+        class="bg-white dark_bg-black mx-auto w-full md_w-4/5 py-4 flex-grow px-5"
     >
-        <slot />
-    </main>
+        <main class="max-w-max mx-auto">
+            <slot />
+        </main>
+</div>
     <Footer links={footerLinks} />
 </div>
