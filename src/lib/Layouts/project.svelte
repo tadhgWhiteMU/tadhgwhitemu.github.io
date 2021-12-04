@@ -1,9 +1,4 @@
 <script>
-    import { page } from "$app/stores";
-
-    // TODO These are `undefined` at buildtime, apparently
-    const { host, path } = page;
-
     export let title = "";
     export let platforms = [];
     export let languages = [];
@@ -19,7 +14,6 @@
 <svelte:head>
     <title>Tadhg White | {title}</title>
     <meta property="og:title" content={title} />
-    <meta property="og:url" content={"https://" + host + path} />
     <meta property="og:type" content="article" />
     <meta property="og:description" content={summary} />
     <meta name="twitter:card" content="summary" />

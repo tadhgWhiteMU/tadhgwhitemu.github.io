@@ -1,8 +1,3 @@
-<svelte:head>
-
-<title>Tadhg White | About</title>
-</svelte:head>
-
 # About Me
 
 I am a 3rd Year Computer Science student at Maynooth University, looking to learn about how the technology that powers our world works, how it doesn't, and how we can do better. In particular, I'm interested in how technology can be used as a medium for creativity, and how it shapes our interactions.

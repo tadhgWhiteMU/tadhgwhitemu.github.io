@@ -20,6 +20,9 @@
 
 <svelte:head>
     <title>Tadhg White</title>
+    <meta property="og:title" content="Tadhg White" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
 </svelte:head>
 
 <h1>Welcome</h1>

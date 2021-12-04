@@ -2,6 +2,7 @@
     import navbarLinks from "$lib/Config/navbarLinks.json";
     import footerLinks from "$lib/Config/footerLinks.json";
 
+    
     /** @type {import('@sveltejs/kit').Load}*/
     /* export async function load() {
         return {
@@ -15,6 +16,7 @@
 
 <script>
     import "../app.css";
+    import { page } from "$app/stores";
 
     import NavBar from "$lib/NavBar/index.svelte";
     import Footer from "$lib/Footer/index.svelte";
@@ -22,6 +24,11 @@
     /* export let navbarLinks = [];
     export let footerLinks = []; */
 </script>
+
+<svelte:head>
+    <meta property="og:url" content={"https://" + $page.host + $page.path} />
+    <meta property="og:site_name" content="Tadhg White's Portifolio Site" />
+</svelte:head>
 
 <div class="flex flex-col h-auto min-h-screen bg-purple-600 dark_bg-purple-400">
     <NavBar links={navbarLinks} />

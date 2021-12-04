@@ -18,6 +18,9 @@
 
 <svelte:head>
     <title>Tadhg White | Projects</title>
+    <meta property="og:title" content="Projects" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
 </svelte:head>
 
 <h1>Projects</h1>
