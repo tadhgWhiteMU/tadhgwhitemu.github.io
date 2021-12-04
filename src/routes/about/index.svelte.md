@@ -12,29 +12,33 @@ I enjoy seeing how things are put together, and then watching something I've mad
 On a more theoretical level, I'm fascinated by the design of many things, especially programming languages. There's something very intriguing to me about seeing how all the different aspects of a language, from syntax style to machine code generation, come together.
 
 As part of my course, I'm learning:
-  - the C# programming language, as part of Software Design.
-  - the Dafny programming language, as part of Software Verification.
-  - the Firebase platform and React frontend framework, as part of a group project
+
+-   the C# programming language, as part of Software Design.
+-   the Dafny programming language, as part of Software Verification.
+-   the Firebase platform and React frontend framework, as part of a group project
 
 In my own time, I'm learning Elixir, Rust, Clojure, and Go.
 
 I like:
-  - building web apps and sites with Svelte and TailwindCSS.
-  - solving random problems with Python (world's most overpowered calculator!)
-  - trying my hand at game design and development with Godot.
+
+-   building web apps and sites with Svelte and TailwindCSS.
+-   solving random problems with Python (world's most overpowered calculator!)
+-   trying my hand at game design and development with Godot.
 
 I'm familiar with:
-  - Java
-  - JavaScript/TypeScript
-  - NodeJS
-  - HTML/CSS
+
+-   Java
+-   JavaScript/TypeScript
+-   NodeJS
+-   HTML/CSS
 
 I'd like to learn about:
-  - C and C++
-  - Lisps
-  - Ocaml
-  - WebAssembly
-  - Language/Compiler Design
-  - Natural Language Processing
+
+-   C and C++
+-   Lisps
+-   Ocaml
+-   WebAssembly
+-   Language/Compiler Design
+-   Natural Language Processing
 
 Outside of programming, I like reading (mostly Mystery and Fantasy --- preferably at the same time!), and solving Sudoku puzzles with peculiar rulesets.
