@@ -33,7 +33,7 @@ I'd like to learn about:
   - C and C++
   - Lisps
   - Ocaml
-  - WebAsemmbly
+  - WebAssembly
   - Language/Compiler Design
   - Natural Language Processing
 

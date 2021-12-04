@@ -25,9 +25,12 @@
         @apply hover_underline font-bold text-purple-500;
     }
 
-    p,
-    main li {
+    p {
         @apply text-lg font-normal font-sans max-w-prose pb-3;
+    }
+
+    main li {
+        @apply max-w-prose;
     }
 
     li > p {
@@ -61,12 +64,4 @@
     div.body ul {
         @apply pb-3;
     }
-
-    /* main ul.my-box-list li {
-        @apply list-none;
-    } */
-
-    /* main ul li {
-        @apply list-disc list-inside;
-    } */
 }

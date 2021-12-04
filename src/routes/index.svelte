@@ -30,7 +30,7 @@
 </p>
 
 <h2>Some things I've made</h2>
-<ul class="py-2 space-y-2 my-box-list">
+<ul class="py-2 space-y-2">
     {#each projects as { title, summary, slug }}
         <li class="border-2 border-purple-600 dark_border-purple-400 p-2 max-w-prose">
             <h3>
