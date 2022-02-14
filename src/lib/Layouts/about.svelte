@@ -8,6 +8,6 @@
     <meta name="twitter:card" content="summary" />
 </svelte:head>
 
-<div class="mx-auto max-w-max py-2 body">
+<div class="body">
     <slot />
 </div>
