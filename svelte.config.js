@@ -9,8 +9,10 @@ const config = {
 
     kit: {
         // hydrate the <div id="svelte"> element in src/app.html
-        target: "#svelte",
-        host: "tadhgwhitemu.github.io",
+        // ...`target` was also removed. Why wasn't this error reached first?
+        // target: "#svelte",
+        // `config.kit.host` was removed at some point, apparently
+        // host: "tadhgwhitemu.github.io",
         paths: {
             base: "",
         },

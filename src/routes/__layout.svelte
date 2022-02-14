@@ -26,7 +26,7 @@
 </script>
 
 <svelte:head>
-    <meta property="og:url" content={"https://" + $page.host + $page.path} />
+    <meta property="og:url" content={"https://" + $page.host + $page.url.pathname} />
     <meta property="og:site_name" content="Tadhg White's Portifolio Site" />
 </svelte:head>
 

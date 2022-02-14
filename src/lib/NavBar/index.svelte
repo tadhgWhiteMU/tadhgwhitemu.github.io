@@ -3,9 +3,9 @@
 
     export let links = [];
 
-    let curr = $page.path;
+    let curr = $page.url.pathname;
 
-    $: curr = $page.path;
+    $: curr = $page.url.pathname;
 
     let toggle = true;
 

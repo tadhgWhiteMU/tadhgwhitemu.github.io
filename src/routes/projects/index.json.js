@@ -1,9 +1,10 @@
 /** @type {import('@sveltejs/kit').RequestHandler} */
-export async function get({ query }) {
+export async function get({ url }) {
+    const { searchParams } = url;
     const modules = import.meta.glob("./*.{md, svelte.md}");
 
     let projectPromises = [];
-    const limit = Number(query.get("limit") ?? Infinity);
+    const limit = Number(searchParams.get("limit") ?? Infinity);
 
     if (Number.isNaN(limit)) {
         return {

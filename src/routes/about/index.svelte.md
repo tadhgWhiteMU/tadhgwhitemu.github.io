@@ -26,6 +26,7 @@ I'm familiar with:
 -   JavaScript/TypeScript
 -   NodeJS
 -   HTML/CSS
+-   Python
 
 I'd like to learn about:
 
