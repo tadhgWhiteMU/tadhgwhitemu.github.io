@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="portifolio_favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="3.4208333"
+     inkscape:cx="75.274056"
+     inkscape:cy="76.881851"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#9900ff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.9218;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path31"
+       cx="60"
+       cy="60"
+       r="55" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:53.5845px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00471"
+       x="59.739799"
+       y="76.966614"
+       id="text3749"
+       transform="scale(0.99715006,1.0028581)"><tspan
+         sodipodi:role="line"
+         id="tspan3747"
+         x="59.739799"
+         y="76.966614"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.5845px;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:1.00471">TW</tspan></text>
+  </g>
+</svg>

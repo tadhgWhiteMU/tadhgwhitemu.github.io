@@ -1,0 +1,87 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-1d67d0fc.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-b4c856c3.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/projects/index.svelte",
+      "src/routes/projects/game-of-life.svelte.md",
+      "src/routes/about/index.svelte.md"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-dbb95b83.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b4c856c3.js",
+      "_index-aa8d14a6.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-ad262d33.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-93a5beca.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b4c856c3.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-218739a2.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b4c856c3.js",
+      "_index-aa8d14a6.js"
+    ]
+  },
+  "src/routes/projects/index.svelte": {
+    "file": "pages/projects/index.svelte-ccc92c83.js",
+    "src": "src/routes/projects/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b4c856c3.js",
+      "_index-aa8d14a6.js"
+    ]
+  },
+  "src/routes/projects/game-of-life.svelte.md": {
+    "file": "pages/projects/game-of-life.svelte.md-11fe701b.js",
+    "src": "src/routes/projects/game-of-life.svelte.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b4c856c3.js"
+    ]
+  },
+  "src/routes/about/index.svelte.md": {
+    "file": "pages/about/index.svelte.md-c2212375.js",
+    "src": "src/routes/about/index.svelte.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b4c856c3.js"
+    ]
+  },
+  "_vendor-b4c856c3.js": {
+    "file": "chunks/vendor-b4c856c3.js"
+  },
+  "_index-aa8d14a6.js": {
+    "file": "chunks/index-aa8d14a6.js",
+    "imports": [
+      "_vendor-b4c856c3.js"
+    ]
+  }
+}
